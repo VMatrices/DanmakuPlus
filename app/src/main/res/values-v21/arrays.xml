@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="position_entries">
+        <item>整个屏幕</item>
+        <item>屏幕上部</item>
+        <item>屏幕中间</item>
+        <item>屏幕下部</item>
+    </string-array>
+    <string-array name="position_entries_value">
+        <item>full</item>
+        <item>top</item>
+        <item>middle</item>
+        <item>bottom</item>
+    </string-array>
+</resources>

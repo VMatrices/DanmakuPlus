@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">弹幕+</string>
+    <string name="label_activity_main">Danmaku+</string>
+    <string name="label_activity_filter">屏蔽应用+</string>
+    <string name="label_activity_permission">需要以下权限</string>
+    <string name="label_service_notification">弹幕+通知监视服务</string>
+    <string name="label_service_rain">弹幕雨服务</string>
+    <string name="toast_running">“弹幕+”服务正在运行</string>
+    <string name="toast_quit">“弹幕+”服务被终止</string>
+    <string name="toast_error">内部错误</string>
+    <string name="donate_alipay"><![CDATA[alipayqr://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https%3a%2f%2fqr.alipay.com%2fFKX07170PTU6ZQMM5BT717%3F_s%3Dweb-other]]></string>
+    <string name="snackbar_service_on">弹幕服务已开启</string>
+    <string name="snackbar_service_off">弹幕服务已关闭</string>
+    <string name="snackbar_setting_saved">设置已保存</string>
+    <string name="snackbar_rain_stop">弹幕雨停止</string>
+    <string name="snackbar_rain_start">弹幕雨开始</string>
+    <string name="toast_permission_readnotification">请允许应用读取通知</string>
+    <string name="toast_permission_showfloatwind">请开启应用悬浮窗权限</string>
+    <string name="layout_main_tip">滑动展开设置</string>
+    <string name="layout_permission_title1">监听通知</string>
+    <string name="layout_permission_title2">悬浮窗</string>
+    <string name="layout_permission_text2">用于显示弹幕</string>
+    <string name="layout_permission_text1">用于获取通知信息</string>
+    <string name="layout_pref_color">颜色</string>
+    <string name="layout_pref_brightness">亮度</string>
+    <string name="layout_pref_random">随机</string>
+</resources>

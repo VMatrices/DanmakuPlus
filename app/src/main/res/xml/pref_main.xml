@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/app_name">
+
+    <PreferenceCategory android:title="全局设置">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="enable"
+            android:summaryOff="弹幕通知服务已关闭"
+            android:summaryOn="弹幕通知服务已开启"
+            android:title="启用弹幕通知" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="shakeclear"
+            android:summary="甩一甩手机快速清空弹幕"
+            android:title="摇晃清空弹幕" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="setting"
+        android:title="弹幕设置">
+
+        <cn.vmatrices.danmakuplus.preference.SeekBarPreference
+            android:defaultValue="0"
+            android:key="speed"
+            android:summary="弹幕滚动速度"
+            android:title="弹幕速度" />
+
+        <ListPreference
+            android:defaultValue="full"
+            android:entries="@array/position_entries"
+            android:entryValues="@array/position_entries_value"
+            android:key="position"
+            android:summary="弹幕出现在屏幕的区域"
+            android:title="弹幕位置" />
+
+        <cn.vmatrices.danmakuplus.preference.SeekBarPreference
+            android:defaultValue="20"
+            android:key="fontSize"
+            android:summary="弹幕文字大小"
+            android:title="弹幕大小" />
+
+        <cn.vmatrices.danmakuplus.preference.ColorPickerPreference
+            android:defaultValue="@android:color/holo_blue_dark"
+            android:key="fontColor"
+            android:summary="弹幕字体颜色"
+            android:title="字体颜色"
+            app:defaultRandom="true" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="fontBold"
+            android:summary="使文字更加清晰"
+            android:title="字体加粗" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="bgEnable"
+            android:summary="显示弹幕背景"
+            android:title="显示背景" />
+
+        <cn.vmatrices.danmakuplus.preference.ColorPickerPreference
+            android:defaultValue="@android:color/black"
+            android:key="bgColor"
+            android:summary="弹幕背景颜色"
+            android:title="背景颜色"
+            app:defaultRandom="false" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="singleTitle"
+            android:summaryOff="标题内容显示一行"
+            android:summaryOn="标题内容换行显示"
+            android:title="独立标题" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="其他设置">
+
+        <Preference
+            android:key="excludeApp"
+            android:summary="排除不想显示弹幕的应用"
+            android:title="排除应用">
+            <!--<intent-->
+                <!--android:action="android.intent.action.MAIN"-->
+                <!--android:targetClass="cn.vmatrices.danmakuplus.ui.FilterActivity"-->
+                <!--android:targetPackage="cn.vmatrices.danmakuplus" />-->
+        </Preference>
+
+        <EditTextPreference
+            android:dialogMessage="多个关键字请用逗号隔开"
+            android:key="excludeWord"
+            android:summary="排除含指定关键字的通知"
+            android:title="排除关键字" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="excludeSame"
+            android:summary="过滤发送间隔过短的重复消息"
+            android:title="过滤重复消息" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="关于">
+
+        <Preference
+            android:summary="为本应用评分"
+            android:title="评价">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=cn.vmatrices.danmakuplus" />
+        </Preference>
+
+
+        <Preference
+            android:key="donate"
+            android:summary="支持支付宝"
+            android:title="捐赠">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/donate_alipay" />
+        </Preference>
+
+        <Preference
+            android:key="checkUpdate"
+            android:title="检查更新">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://vmatrices.cn" />
+        </Preference>
+
+        <Preference
+            android:key="about"
+            android:summary="关于弹幕+"
+            android:title="关于"></Preference>
+
+        <Preference android:summary="iBelieve"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
